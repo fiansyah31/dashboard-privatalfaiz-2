@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html translate="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Kritik dan Saran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/fonts/icons/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../favicon.ico">
+</head>
+
+<body>
+    <div class="loading-wrapper">
+        <div class="spinner circle">
+        </div>
+        <img src="../assets/images/graduation-hat.png" alt="loading" />
+    </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light main">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" alt="logo" /></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mytryout.html">Tryout ku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tryout.html">Beli Paket Tryout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tryout-result.html">Hasil Tryout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discussion.html">Pembahasan Tryout</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Informasi
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="information.html">Informasi Pembayaran</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-info">
+                <ul>
+                    <li class="nav-item dropdown profile-dropdown">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../assets/images/profile.png" alt="profile-pic" /> <span>Shyntya S.</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="profile.html">Profil</a></li>
+                            <li><a class="dropdown-item" href="changepassword.html">Ganti Password</a></li>
+                            <li><a class="dropdown-item" href="suggestion.html">Kritik Saran</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="login.html">Keluar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="page-header">
+        <div class="container">
+        </div>
+    </header>
+    <main class="page-main has-bottom-navigation">
+
+        <section>
+            <div class="container section-wrapper">
+                <div class="card">
+                    <div class="title-wrapper mb-4">
+                        <div>
+                            <h1 class="title">Kritik dan Saran</h1>
+                        </div>
+                    </div>
+                    <form name="changepassword">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="body" class="form-label">Isi</label>
+                                    <textarea class="form-control" id="body"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 offset-lg-6">
+                                <div class="form-button">
+                                    <button type="submit" class="btn btn-rounded btn-secondary">Kirim Kritik dan Saran</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <ul class="bottom-navigation d-flex d-md-none">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">
+                    <i class="icon-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mytryout.html">
+                    <i class="icon-tryout"></i>
+                    <span>Tryout Ku</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tryout.html">
+                    <i class="icon-cart"></i>
+                    <span>Beli Tryout</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tryout-result.html">
+                    <i class="icon-result"></i>
+                    <span>Hasil Tryout</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="discussion.html">
+                    <i class="icon-book"></i>
+                    <span>Pembahasan</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+
+<script src="../assets/js/main.js"></script>
+<script>
+    window.addEventListener('load', () => {
+    });
+</script>
+
+</html>

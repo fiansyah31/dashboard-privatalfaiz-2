@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html translate="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/fonts/icons/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../favicon.ico">
+</head>
+
+<body>
+    <div class="loading-wrapper">
+        <div class="spinner circle"></div>
+        <img src="../assets/images/graduation-hat.png" alt="loading" />
+    </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light main">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../assets/images/logo-brand.png" alt="logo" /></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mytryout.html">Mulai Belajar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mytryout.html">Tryoutku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mytryout.html">Videoku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mytryout.html">Kelas Onlineku</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Panduan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="information.html">Tryout</a></li>
+                            <li><a class="dropdown-item" href="information.html">Video</a></li>
+                            <li><a class="dropdown-item" href="information.html">Kelas Online</a></li>
+                            <li><a class="dropdown-item" href="information.html">Tanya Costumer Service</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-info">
+                <ul>
+                    <li class="nav-item dropdown profile-dropdown">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../assets/images/profile.png" alt="profile-pic" /> <span>Shyntya S.</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="profile.html">Profil</a></li>
+                            <li><a class="dropdown-item" href="changepassword.html">Ganti Password</a></li>
+                            <li><a class="dropdown-item" href="suggestion.html">Kritik Saran</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="login.html">Keluar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="home-header">
+        <div class="inner">
+            <div class="image">
+                <img src="./../assets/images/student.png" alt="banner-image" />
+            </div>
+            <div class="caption">
+                <h1 class="title">SIAP UTBK?</h1>
+                <h3 class="subtitle">Belajar nyaman prestasi mengesankan</h3>
+                <div class="d-none d-md-flex align-items-center">
+                   <div class="card-start text-center">
+                    <h4>Mulai Belajar</h4>
+                    <a href="#" class="btn btn-secondary px-2 py-1 mb-2">Tryout</a>
+                    <a href="#" class="btn btn-secondary px-2 py-1 mb-2">Video belajar</a>
+                    <a href="#" class="btn btn-secondary px-2 py-1 mb-2">Kelas online</a>
+                   </div>
+                   <div class="card-find-jurusan">
+                    <img src="/assets/images/tryout-icon.svg" alt="icon-find-jurusan" width="20px">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Pilihan jurusanku</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="has-bottom-navigation">
+        <section>
+            <div class="container section-wrapper">
+                <div class="title-wrapper">
+                    <div>
+                        <h1 class="title">Tryout ku</h1>
+                        <p class="subtitle">Ayo kerjakan atau pelajari paket belajar di bawah ini!</p>
+                    </div>
+                    <a class="more-link align-self-end" href="tryout.html">Lainnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="tryout-list scrollx" id="mytryout">
+                    <div class="card tryout-card">
+                        <div class="tryout-card-top">
+                            <div class="tryout-icon">
+                                <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                            </div>
+                            <div class="tryout-info">
+                                <span class="badge tryout-badge">Belum Dibayar</span>
+                            </div>
+                        </div>
+                        <div class="tryout-card-body">
+                            <div class="tryout-title">
+                                TRY OUT UTBK TKA SAINTEK 2022 - PART 3
+                            </div>
+                            <div class="tryout-desc">
+                                Soal tryout SKD CPNS 2021 berisi 1 paket . ...
+                            </div>
+                            <div class="tryout-price">
+                                Rp 48.000
+                            </div>
+                        </div>
+                        <div class="tryout-card-footer">
+                            <a href="detail-package.html" class="btn btn-primary btn-rounded">Buka Paket</a>
+                        </div>
+                    </div>
+                    <div class="card tryout-card">
+                        <div class="tryout-card-top">
+                            <div class="tryout-icon">
+                                <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                            </div>
+                            <div class="tryout-info">
+                                <span class="badge tryout-badge">Belum Dibayar</span>
+                            </div>
+                        </div>
+                        <div class="tryout-card-body">
+                            <div class="tryout-title">
+                                TRY OUT UTBK TKA SOSHUM 2022 - PART 3
+                            </div>
+                            <div class="tryout-desc">
+                                Soal tryout SKD CPNS 2021 berisi 1 paket . ...
+                            </div>
+                            <div class="tryout-price">
+                                Rp 48.000
+                            </div>
+                        </div>
+                        <div class="tryout-card-footer">
+                            <a href="detail-package.html" class="btn btn-primary btn-rounded">Buka Paket</a>
+                        </div>
+                    </div>
+                    <div class="card tryout-card">
+                        <div class="tryout-card-top">
+                            <div class="tryout-icon">
+                                <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                            </div>
+                            <div class="tryout-info">
+                                <span class="badge tryout-badge">Belum Dibayar</span>
+                            </div>
+                        </div>
+                        <div class="tryout-card-body">
+                            <div class="tryout-title">
+                                Paket 7 Video Belajar SAINTEK BATCH 3
+                            </div>
+                            <div class="tryout-desc">
+                                Soal tryout SKD CPNS 2021 berisi 1 paket . ...
+                            </div>
+                            <div class="tryout-price">
+                                Rp 48.000
+                            </div>
+                        </div>
+                        <div class="tryout-card-footer">
+                            <a href="detail-package.html" class="btn btn-primary btn-rounded">Buka Paket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container section-wrapper">
+                <div class="title-wrapper">
+                    <div>
+                        <h1 class="title">Paket Tryout</h1>
+                        <p class="subtitle">Ayo kerjakan atau pelajari paket belajar di bawah ini!</p>
+                    </div>
+                </div>
+                <div class="tryouttype-radio justify-content-between" role="group" aria-label="radio toggle button group">
+                    <div class="d-flex">
+                        <div class="btn-group-item">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-rounded btn-outline-primary" for="btnradio1">SEMUA</label>
+                        </div>
+                        <div class="btn-group-item">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-rounded btn-outline-primary" for="btnradio2">UTBK</label>
+                        </div>
+    
+                        <div class="btn-group-item">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                            <label class="btn btn-rounded btn-outline-primary" for="btnradio3">CPNS</label>
+                        </div>
+                    </div>
+                    <a class="more-link align-self-center" href="tryout.html">Lainnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="tryout-list scrollx" id="othertryout">
+                    <div class="card tryout-card">
+                        <div class="tryout-card-top">
+                            <div class="tryout-icon">
+                                <img src="../assets/images/test-icon.png" alt="test-icon" />
+                            </div>
+                            <div class="tryout-info">
+                                <span class="badge date-badge">Terakhir 01 November 2021</span>
+                            </div>
+                        </div>
+                        <div class="tryout-card-body">
+                            <div class="tryout-title">
+                                TO 4 SKD CPNS 2021 Free
+                            </div>
+                            <div class="tryout-desc">
+                                Soal tryout SKD CPNS 2021 berisi 1 paket . ...
+                            </div>
+                            <div class="tryout-price">
+                                Rp 48.000
+                            </div>
+                        </div>
+                        <div class="tryout-card-footer">
+                            <a href="buy-package.html" class="btn btn-primary btn-rounded">Beli Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container section-wrapper">
+                <div class="title-wrapper">
+                    <div>
+                        <h1 class="title">Grafik Tryout</h1>
+                        <p class="subtitle">Ayo lihat hasil pencapaianmu di grafik tryoutmu!</p>
+                    </div>
+                </div>
+                <div class="card chart-card">
+                    <canvas id="reportChart" height="400px"></canvas>
+                </div>
+            </div>
+
+        </section>
+        <ul class="bottom-navigation d-flex d-md-none">
+            <li class="nav-item">
+                <a class="nav-link active">
+                    <i class="icon-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mytryout.html">
+                    <i class="icon-tryout"></i>
+                    <span>Mulai belajar</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mytryout.html">
+                    <i class="icon-tryout"></i>
+                    <span>TryoutKu</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tryout.html">
+                    <i class="icon-cart"></i>
+                    <span>Videoku</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tryout-result.html">
+                    <i class="icon-result"></i>
+                    <span>Kelas onlineku</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="discussion.html">
+                    <i class="icon-book"></i>
+                    <span>Panduan</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+    integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+    window.addEventListener('load', () => {
+        const mytryoutList = document.querySelector('#mytryout');
+        const mytryoutCard = mytryoutList.querySelector('.tryout-card');
+
+        const othertryoutList = document.querySelector('#othertryout');
+        const othertryoutCard = othertryoutList.querySelector('.tryout-card');
+
+        for (let i = 0; i < 0; i++) {
+            mytryoutList.append(mytryoutCard.cloneNode(true));
+            othertryoutList.append(othertryoutCard.cloneNode(true));
+        }
+    });
+    const labels = [
+        '',
+        'TO 1 SKD CPNS 2021',
+        'TO 2 SKD CPNS 2021',
+        'TO 3 SKD CPNS 2021',
+        'TO 4 SKD CPNS 2021',
+        'TO 5 SKD CPNS 2021',
+        'TO 6 SKD CPNS 2021',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Nilai Tryoutku',
+            backgroundColor: 'rgba(255, 99, 132, 0.1)',
+            fill: true,
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 88, 90, 80, 70, 50, 60, 99],
+        }, {
+            label: 'Nilai Rata-rata siswa',
+            backgroundColor: 'rgba(57, 94, 172, 0.1)',
+            fill: true,
+            borderColor: 'rgb(57, 94, 172)',
+            data: [0, 75, 60, 75, 52, 80, 80, 95],
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            tension: 0.3,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                }
+            },
+            responsive: true,
+            scales: {
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        minRotation: 30
+                    }
+                },
+                y: {
+
+                    grid: {
+                        display: false
+                    }
+                }
+            }
+        }
+    };
+
+    let myChart = new Chart(
+        document.getElementById('reportChart'),
+        config
+    );
+</script>

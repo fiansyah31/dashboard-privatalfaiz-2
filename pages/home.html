@@ -90,30 +90,59 @@
             <div class="image">
                 <img src="./../assets/images/student.png" alt="banner-image" />
             </div>
-            <div class="caption">
+            <div class="caption align-self-end">
                 <h1 class="title">SIAP UTBK?</h1>
                 <h3 class="subtitle">Belajar nyaman prestasi mengesankan</h3>
-                <div class="d-none d-md-flex align-items-center">
+                <div class="d-none d-md-flex align-items-center action-find">
                    <div class="card-start text-center">
                     <h4>Mulai Belajar</h4>
-                    <a href="#" class="btn btn-secondary px-2 py-1 mb-2">Tryout</a>
-                    <a href="#" class="btn btn-secondary px-2 py-1 mb-2">Video belajar</a>
-                    <a href="#" class="btn btn-secondary px-2 py-1 mb-2">Kelas online</a>
+                    <a href="#" class="btn btn-secondary px-2 py-1 mb-2" style="width: 100px ;">Tryout</a>
+                    <a href="#" class="btn btn-secondary px-2 py-1 mb-2" style="width: 100px ;">Video belajar</a>
+                    <a href="#" class="btn btn-secondary px-2 py-1 mb-2" style="width: 100px ;">Kelas online</a>
                    </div>
                    <div class="card-find-jurusan">
                     <img src="./../assets/images/tryout-icon.svg" alt="icon-find-jurusan" width="20px">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Pilihan jurusanku</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                    <div class="select">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option value="1" selected>Campuran</option>
+                              <option value="2">Saintek</option>
+                              <option value="3">Soshum</option>
+                            </select>
+                            <label for="floatingSelect">Pilih Jurusanku</label>
+                          </div>
+                    </div>
                    </div>
                 </div>
             </div>
         </div>
     </header>
     <main class="has-bottom-navigation">
+        <section class="action-find-sm">
+            <div class="container">
+                <div class="d-flex d-md-none align-items-center action-find">
+                    <div class="card-start text-center">
+                     <h4>Mulai Belajar</h4>
+                     <a href="#" class="btn btn-secondary px-2 py-1 mb-2" style="width: 100px ;">Tryout</a>
+                     <a href="#" class="btn btn-secondary px-2 py-1 mb-2" style="width: 100px ;">Video belajar</a>
+                     <a href="#" class="btn btn-secondary px-2 py-1 mb-2" style="width: 100px ;">Kelas online</a>
+                    </div>
+                    <div class="card-find-jurusan">
+                     <img src="./../assets/images/tryout-icon.svg" alt="icon-find-jurusan" width="20px">
+                     <div class="select">
+                         <div class="form-floating">
+                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                               <option value="1" selected>Campuran</option>
+                               <option value="2">Saintek</option>
+                               <option value="3">Soshum</option>
+                             </select>
+                             <label for="floatingSelect">Pilih Jurusanku</label>
+                           </div>
+                     </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
         <section>
             <div class="container section-wrapper">
                 <div class="title-wrapper">
@@ -125,74 +154,83 @@
                 </div>
                 <div class="tryout-list scrollx" id="mytryout">
                     <div class="card tryout-card">
-                        <div class="tryout-card-top">
-                            <div class="tryout-icon">
-                                <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                        <div class="card-body-tryout-card">
+                            <div class="tryout-card-top">
+                                <div class="tryout-icon">
+                                    <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                                </div>
+                                <div class="tryout-info">
+                                    <span class="badge tryout-badge">Belum Dibayar</span>
+                                </div>
                             </div>
-                            <div class="tryout-info">
-                                <span class="badge tryout-badge">Belum Dibayar</span>
-                            </div>
-                        </div>
-                        <div class="tryout-card-body">
-                            <div class="tryout-title">
-                                TRY OUT UTBK TKA SAINTEK 2022 - PART 3
-                            </div>
-                            <div class="tryout-desc">
-                                Soal tryout SKD CPNS 2021 berisi 1 paket . ...
-                            </div>
-                            <div class="tryout-price">
-                                Rp 48.000
+                            <div class="tryout-card-body">
+                                <div class="tryout-title">
+                                    TRY OUT UTBK TKA SOSHUM 2022 - PART 3
+                                </div>
+                                <div class="tryout-desc">
+                                    Berisi soal-soal HOTS sesuai kisi-kisi UTBK SAINTEK, disusun langsung oleh Kak Faiz dan tim.
+                                    Dapat dikerjakan per subtes untuk kamu yang ingin mengerjakan soal TO TKA secara fleksibel.
+                                    (Aktif hingga akhir UTBK)
+                                </div>
                             </div>
                         </div>
                         <div class="tryout-card-footer">
+                            <div class="tryout-price">
+                                Rp 48.000
+                            </div>
                             <a href="detail-package.html" class="btn btn-primary btn-rounded">Buka Paket</a>
                         </div>
                     </div>
                     <div class="card tryout-card">
-                        <div class="tryout-card-top">
-                            <div class="tryout-icon">
-                                <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                        <div class="card-body-tryout-card">
+                            <div class="tryout-card-top">
+                                <div class="tryout-icon">
+                                    <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                                </div>
+                                <div class="tryout-info">
+                                    <span class="badge tryout-badge">Belum Dibayar</span>
+                                </div>
                             </div>
-                            <div class="tryout-info">
-                                <span class="badge tryout-badge">Belum Dibayar</span>
-                            </div>
-                        </div>
-                        <div class="tryout-card-body">
-                            <div class="tryout-title">
-                                TRY OUT UTBK TKA SOSHUM 2022 - PART 3
-                            </div>
-                            <div class="tryout-desc">
-                                Soal tryout SKD CPNS 2021 berisi 1 paket . ...
-                            </div>
-                            <div class="tryout-price">
-                                Rp 48.000
+                            <div class="tryout-card-body">
+                                <div class="tryout-title">
+                                    TRY OUT UTBK TKA SOSHUM 2022 - PART 3
+                                </div>
+                                <div class="tryout-desc">
+                                    Berisi soal-soal HOTS sesuai kisi-kisi UTBK SOSHUM, disusun langsung oleh Kak Faiz dan tim.
+                                </div>
                             </div>
                         </div>
                         <div class="tryout-card-footer">
+                            <div class="tryout-price">
+                                Rp 48.000
+                            </div>
                             <a href="detail-package.html" class="btn btn-primary btn-rounded">Buka Paket</a>
                         </div>
                     </div>
                     <div class="card tryout-card">
-                        <div class="tryout-card-top">
-                            <div class="tryout-icon">
-                                <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                        <div class="card-body-tryout-card">
+                            <div class="tryout-card-top">
+                                <div class="tryout-icon">
+                                    <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                                </div>
+                                <div class="tryout-info">
+                                    <span class="badge tryout-badge">Belum Dibayar</span>
+                                </div>
                             </div>
-                            <div class="tryout-info">
-                                <span class="badge tryout-badge">Belum Dibayar</span>
-                            </div>
-                        </div>
-                        <div class="tryout-card-body">
-                            <div class="tryout-title">
-                                Paket 7 Video Belajar SAINTEK BATCH 3
-                            </div>
-                            <div class="tryout-desc">
-                                Soal tryout SKD CPNS 2021 berisi 1 paket . ...
-                            </div>
-                            <div class="tryout-price">
-                                Rp 48.000
+                            <div class="tryout-card-body">
+                                <div class="tryout-title">
+                                    TRY OUT UTBK TKA SOSHUM 2022 - PART 3
+                                </div>
+                                <div class="tryout-desc">
+                                    Berisi 7 video belajar seru bareng Super Teacher Privat Al Faiz!
+                                    (Aktif hingga 31 Juli 2022)
+                                </div>
                             </div>
                         </div>
                         <div class="tryout-card-footer">
+                            <div class="tryout-price">
+                                Rp 48.000
+                            </div>
                             <a href="detail-package.html" class="btn btn-primary btn-rounded">Buka Paket</a>
                         </div>
                     </div>

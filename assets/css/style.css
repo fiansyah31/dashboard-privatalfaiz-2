@@ -489,7 +489,12 @@ nav.main .navbar-nav .nav-link {
     padding-left: 64px;
     padding-right: 64px;
 }
+.home-header .action-find {
+  top: 40px;
+  position: relative;
+}
 .home-header .card-start {
+    width: 60%;
     margin-left: 10px;
     margin-right: 10px;
     background-color: #ffffff;
@@ -500,7 +505,12 @@ nav.main .navbar-nav .nav-link {
     font-size: 16px;
     color: #363636;
 }
+.home-header .card-start a {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 .home-header .card-find-jurusan {
+    width: 40%;
     margin-left: 10px;
     margin-right: 10px;
     background-color: #ffffff;
@@ -512,14 +522,65 @@ nav.main .navbar-nav .nav-link {
     margin-right: 10px;
     float: left;
 }
-.home-header .card-find-jurusan .form-select {
+.home-header .card-find-jurusan .select .form-select {
+    width: 160px !important;
     border: 0px;
     padding-left: 10px;
     padding-right: 40px;
     float: right;
 }
+.home-header .card-find-jurusan .select label {
+    color: #4a4a4a;
+}
+.action-find-sm .action-find {
+  top: 40px;
+  position: relative;
+}
+.action-find-sm .card-start {
+    width: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 25px;
+}
+.action-find-sm .card-start h4 {
+    font-size: 16px;
+    color: #363636;
+}
+.action-find-sm .card-start a {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.action-find-sm .card-find-jurusan {
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 25px;
+}
+.action-find-sm .card-find-jurusan img {
+    margin-right: 10px;
+    float: left;
+}
+.action-find-sm .card-find-jurusan .select .form-select {
+    width: 160px !important;
+    border: 0px;
+    padding-left: 10px;
+    padding-right: 40px;
+    float: right;
+}
+.action-find-sm .card-find-jurusan .select label {
+    color: #4a4a4a;
+}
 .tryout-card {
+    justify-content: space-between;
     padding: 1.5rem 2rem;
+}
+.tryout-card-body{
+    margin-top: 0px;
 }
 
 .tryouttype-radio {
@@ -1382,9 +1443,19 @@ header .title a {
     .tryout-list {
         gap: 16px;
     }
+    .home-header .card-start {
+        width: 40%;
+    }
+    .home-header .card-find-jurusan {
+        width: 60%;
+    }
+    .home-header .card-start a {
+        font-size: 10px;
+        width: 100% !important;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .tryout-list {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1400,6 +1471,17 @@ header .title a {
     }
     .home-header .card-find-jurusan .form-select {
         font-size: 10px;
+    }
+    .home-header .card-find-jurusan .select .form-select{
+        width: 100% !important;
+    }
+    .action-find-sm {
+        margin-top: -10px;
+        margin-bottom:80px;
+    }
+    .action-find-sm .action-find .card-start a {
+       width: 80px !important;
+       font-size: 10px;
     }
 }
 
@@ -1454,6 +1536,20 @@ header .title a {
         font-size: 1rem;
         margin-bottom: 0;
         line-height: 1.5;
+    }
+    .action-find-sm .action-find {
+        text-align: -webkit-center;
+        display: block !important;
+    }
+    .action-find-sm .action-find .card-start {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    .action-find-sm .action-find .card-find-jurusan {
+        width: 80%;
+    }
+    .action-find-sm .action-find .card-find-jurusan .select .form-select {
+        min-width: 100% !important;
     }
     .btn-header-wrapper .btn {
         font-size: 0.8rem;

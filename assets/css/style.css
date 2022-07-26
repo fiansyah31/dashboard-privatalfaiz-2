@@ -509,7 +509,7 @@ nav.main .navbar-nav .nav-link {
     margin-left: 0px;
     margin-right: 0px;
 }
-.home-header .card-find-jurusan {
+.card-find-jurusan {
     width: 40%;
     margin-left: 10px;
     margin-right: 10px;
@@ -519,18 +519,18 @@ nav.main .navbar-nav .nav-link {
     flex-basis: content;
     border-radius: 25px;
 }
-.home-header .card-find-jurusan img {
+.card-find-jurusan img {
     margin-right: 10px;
     float: left;
 }
-.home-header .card-find-jurusan .select .form-select {
+.card-find-jurusan .select .form-select {
     
     border: 0px;
     padding-left: 10px;
     padding-right: 80px;
     float: right;
 }
-.home-header .card-find-jurusan .select label {
+.card-find-jurusan .select label {
     color: #4a4a4a;
 }
 .action-find-sm .action-find {
@@ -591,7 +591,6 @@ nav.main .navbar-nav .nav-link {
 
 .tryouttype-radio .btn-group-item {
     margin-right: 12px;
-    margin-bottom: 24px;
 }
 
 /* End of Home Styling */
@@ -753,10 +752,11 @@ nav.main .navbar-nav .nav-link {
     align-items: flex-end;
     justify-content: flex-start;
     flex: 0 0 200px;
+
 }
 
 .page-header .image img {
-    max-width: 100%;
+    max-width: 500px;
 }
 
 .page-header .caption {
@@ -1461,6 +1461,21 @@ header .title a {
     .tryout-list {
         grid-template-columns: repeat(2, 1fr);
     }
+    .page-header .btn-group-item label {
+        font-size: 13px;
+        padding-left: 14px;
+    padding-right: 14px;
+    }
+    .page-header .caption .card-find-jurusan {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width:80%;
+    place-content: center;
+    }
+    .page-header .image img {
+        max-width: 100%;
+    }
     .home-header .image img {
         width: 500px;
     }
@@ -1471,10 +1486,10 @@ header .title a {
         margin-bottom: 5px;
         font-size: 10px;
     }
-    .home-header .card-find-jurusan .form-select {
+    .card-find-jurusan .form-select {
         font-size: 10px;
     }
-    .home-header .card-find-jurusan .select .form-select{
+    .card-find-jurusan .select .form-select{
         width: 100% !important;
     }
     .action-find-sm {
@@ -1513,8 +1528,8 @@ header .title a {
         padding-top: 8px;
     }
     .home-header {
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
         height: 130px;
         margin-top: 54px;
     }

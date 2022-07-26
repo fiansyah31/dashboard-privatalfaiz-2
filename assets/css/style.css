@@ -516,6 +516,7 @@ nav.main .navbar-nav .nav-link {
     background-color: #ffffff;
     padding: 10px 10px;
     display: flex;
+    flex-basis: content;
     border-radius: 25px;
 }
 .home-header .card-find-jurusan img {
@@ -523,10 +524,10 @@ nav.main .navbar-nav .nav-link {
     float: left;
 }
 .home-header .card-find-jurusan .select .form-select {
-    width: 160px !important;
+    
     border: 0px;
     padding-left: 10px;
-    padding-right: 40px;
+    padding-right: 80px;
     float: right;
 }
 .home-header .card-find-jurusan .select label {
@@ -557,8 +558,9 @@ nav.main .navbar-nav .nav-link {
     margin-left: 10px;
     margin-right: 10px;
     background-color: #ffffff;
-    padding: 10px 10px;
+    padding: 15px;
     display: flex;
+    flex-basis: content;
     border-radius: 25px;
 }
 .action-find-sm .card-find-jurusan img {
@@ -1547,6 +1549,8 @@ header .title a {
     }
     .action-find-sm .action-find .card-find-jurusan {
         width: 80%;
+        flex-basis: content;
+        place-content: center;
     }
     .action-find-sm .action-find .card-find-jurusan .select .form-select {
         min-width: 100% !important;

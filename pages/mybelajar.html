@@ -135,26 +135,56 @@
             <div class="container section-wrapper">
                 <div class="tryout-list" id="othertryout">
                     <div class="card tryout-card">
-                        <div class="tryout-card-top">
-                            <div class="tryout-icon">
-                                <img src="../assets/images/test-icon.png" alt="test-icon" />
+                        <div class="card-body-tryout-card">
+                            <div class="tryout-card-top">
+                                <div class="tryout-icon">
+                                    <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                                </div>
+                                <div class="tryout-info">
+                                    <span class="badge tryout-badge">Belum Dibayar</span>
+                                </div>
                             </div>
-                            <div class="tryout-info">
-                                <span class="badge tryout-badge">Belum Dibayar</span>
-                            </div>
-                        </div>
-                        <div class="tryout-card-body">
-                            <div class="tryout-title">
-                                TO 4 SKD CPNS 2021 Free
-                            </div>
-                            <div class="tryout-desc">
-                                Soal tryout SKD CPNS 2021 berisi 1 paket . ...
-                            </div>
-                            <div class="tryout-price">
-                                Rp 48.000
+                            <div class="tryout-card-body">
+                                <div class="tryout-title">
+                                    TO 4 SKD CPNS 2021 Free
+                                </div>
+                                <div class="tryout-desc">
+                                    Berisi soal-soal HOTS sesuai kisi-kisi UTBK SAINTEK, disusun langsung oleh Kak Faiz dan tim.
+                                    Dapat dikerjakan per subtes untuk kamu yang ingin mengerjakan soal TO TKA secara fleksibel.
+                                    (Aktif hingga akhir UTBK)
+                                </div>
                             </div>
                         </div>
                         <div class="tryout-card-footer">
+                            <div class="tryout-price">
+                                Rp 48.000
+                            </div>
+                            <a href="detail-package.html" class="btn btn-primary btn-rounded">Buka Paket</a>
+                        </div>
+                    </div>
+                    <div class="card tryout-card">
+                        <div class="card-body-tryout-card">
+                            <div class="tryout-card-top">
+                                <div class="tryout-icon">
+                                    <img src="../assets/images/test-icon-privatalfaiz.png" alt="test-icon" />
+                                </div>
+                                <div class="tryout-info">
+                                    <span class="badge tryout-badge">Belum Dibayar</span>
+                                </div>
+                            </div>
+                            <div class="tryout-card-body">
+                                <div class="tryout-title">
+                                    TO 4 SKD CPNS 2021 Free
+                                </div>
+                                <div class="tryout-desc">
+                                    Berisi soal-soal HOTS sesuai kisi-kisi UTBK SOSHUM, disusun langsung oleh Kak Faiz dan tim.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tryout-card-footer">
+                            <div class="tryout-price">
+                                Rp 48.000
+                            </div>
                             <a href="detail-package.html" class="btn btn-primary btn-rounded">Buka Paket</a>
                         </div>
                     </div>
@@ -202,7 +232,7 @@
         const othertryoutList = document.querySelector('#othertryout');
         const othertryoutCard = othertryoutList.querySelector('.tryout-card');
 
-        for (let i = 0; i < 2; i++) {
+        for (let i = 0; i < 0; i++) {
             othertryoutList.append(othertryoutCard.cloneNode(true));
         }
     });

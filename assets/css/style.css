@@ -736,6 +736,8 @@ nav.main .navbar-nav .nav-link {
     background-image: url('../images/star-flat.svg');
     padding: 24px 0;
     padding-bottom: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
 }
 
 .page-header .inner {
